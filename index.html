@@ -1,18 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decodificador</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    
-    
-    <i class="fa-solid fa-circle-exclamation"></i>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
+  <body>
+    <header class="header">
+      <img
+        class="header__logo"
+        src="./assets/img/logo-alura.svg"
+        alt="logo da alura"
+      />
+      <h1 class="header__title">Decoder Alura</h1>
+    </header>
 
-</body>
+    <main class="main">
+      <div class="main__container">
+        <textarea
+          class="main__input"
+          placeholder="Digite seu texto..."
+          id="text"
+        ></textarea>
+        <p class="main__warning">
+          <i class="fa-solid fa-circle-exclamation"></i> Apenas letras
+          minúsculas e sem acento
+        </p>
+        <section class="main__actions">
+          <button class="button primary">Criptografar</button>
+          <button class="button secondary">Descriptografar</button>
+        </section>
+      </div>
+
+      <aside class="aside">
+        <section class="aside__empty">
+          <img
+            class="aside__empty__image"
+            src="./assets/img/not-found.svg"
+            alt="Imagem not found"
+          />
+          <div class="aside__empty__infos">
+            <strong class="aside__empty__infos__title"
+              >Nenhuma mensagem encontrada</strong
+            >
+            <p class="aside__empty__infos__description">
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+          </div>
+        </section>
+        <!-- <section class="aside__content">
+          <p class="aside__content__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            numquam commodi veritatis odio facilis pariatur beatae, earum
+            voluptate architecto dicta animi, enim sit hic deleniti sapiente aut
+            ducimus recusandae ab.
+          </p>
+          <button class="button secondary">Copiar</button>
+        </section> -->
+      </aside>
+    </main>
+  </body>
 </html>
