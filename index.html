@@ -40,13 +40,15 @@
           minúsculas e sem acento
         </p>
         <section class="main__actions">
-          <button class="button primary">Criptografar</button>
-          <button class="button secondary">Descriptografar</button>
+          <button class="button primary" id="js-encrypt">Criptografar</button>
+          <button class="button secondary" id="js-decrypt">
+            Descriptografar
+          </button>
         </section>
       </div>
     </main>
     <aside class="aside">
-      <section class="aside__empty">
+      <section class="aside__empty" id="aside-empty">
         <img
           class="aside__empty__image"
           src="./assets/img/not-found.svg"
@@ -61,15 +63,12 @@
           </p>
         </div>
       </section>
-      <!-- <section class="aside__content">
-        <p class="aside__content__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          numquam commodi veritatis odio facilis pariatur beatae, earum
-          voluptate architecto dicta animi, enim sit hic deleniti sapiente aut
-          ducimus recusandae ab.
-        </p>
-        <button class="button secondary">Copiar</button>
-      </section> -->
+      <section class="aside__content hidden" id="aside-content">
+        <p class="aside__content__text" id="aside-text"></p>
+        <button class="button secondary" id="copy-text">Copiar</button>
+      </section>
     </aside>
+
+    <script src="./main.js"></script>
   </body>
 </html>
